@@ -1,24 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recetas Colombianas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>2 commit</h1>
-    <h1>3 commit</h1>
-    <h1>4 commit</h1>
-    <h1>5 commit</h1>
-    <h1>6 commit</h1>
-    <h1>7 commit</h1>
-    <h1>8 commit</h1>
-    <h1>8 commit</h1>
-    <h1>8 commit</h1>
-    <h1>8 commit</h1>
-    <h1>8 commit</h1>
-    <h1>8 commit</h1>
-    <h1>8 commit</h1>
-    
+    <header>
+        <h1>🇨🇴 Recetas Típicas Colombianas 🇨🇴</h1>
+        <p>Explora los sabores más tradicionales de Colombia con estas 5 recetas únicas.</p>
+    </header>
+
+    <main class="container">
+        <!-- Receta 1 -->
+        <div class="card">
+            <h2>Bandeja Paisa</h2>
+            <img src="https://cdn.colombia.com/gastronomia/2011/08/02/bandeja-paisa-1616-1.gif" alt="Bandeja Paisa">
+            <p class="descripcion">La Bandeja Paisa es uno de los platos más representativos de Antioquia. Es abundante, variado y refleja la riqueza de la cocina colombiana.</p>
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Arroz blanco</li>
+                <li>Fríjoles rojos</li>
+                <li>Carne molida</li>
+                <li>Chicharrón</li>
+                <li>Huevo frito</li>
+                <li>Plátano maduro frito</li>
+                <li>Aguacate</li>
+                <li>Arepa pequeña</li>
+            </ul>
+            <button onclick="toggleSteps('paisa')">Ver pasos de preparación</button>
+            <ol id="paisa" class="steps">
+                <li>Cocinar los fríjoles hasta que estén suaves.</li>
+                <li>Preparar arroz blanco.</li>
+                <li>Freír el chicharrón y el plátano maduro.</li>
+                <li>Cocinar la carne molida con condimentos.</li>
+                <li>Servir en bandeja con huevo, arepa y aguacate.</li>
+            </ol>
+        </div>
+
+        <!-- Receta 2 -->
+        <div class="card">
+            <h2>Ajiaco Santafereño</h2>
+            <img src="https://www.doroteaparrilla.com/wp-content/uploads/2020/05/AJIACO.jpg" alt="Ajiaco Santafereño">
+            <p class="descripcion">El Ajiaco es una sopa espesa típica de Bogotá, hecha con tres tipos de papas, pollo y guascas, que le dan un sabor único.</p>
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Pechuga de pollo</li>
+                <li>Papas criollas, pastusas y sabaneras</li>
+                <li>Mazorca</li>
+                <li>Guascas</li>
+                <li>Crema de leche</li>
+                <li>Alcaparras</li>
+                <li>Arroz blanco</li>
+            </ul>
+            <button onclick="toggleSteps('ajiaco')">Ver pasos de preparación</button>
+            <ol id="ajiaco" class="steps">
+                <li>Cocinar el pollo en agua con sal.</li>
+                <li>Añadir las diferentes papas y la mazorca.</li>
+                <li>Agregar guascas para el sabor.</li>
+                <li>Servir con crema de leche, alcaparras y arroz.</li>
+            </ol>
+        </div>
+
+        <!-- Receta 3 -->
+        <div class="card">
+            <h2>Arepas Rellenas</h2>
+            <img src="https://i.pinimg.com/736x/ac/91/01/ac91013c868cd74b19b13db48e951386.jpg" alt="Arepas Rellenas">
+            <p class="descripcion">Las arepas rellenas son un desayuno o cena popular en Colombia, versátiles y deliciosas con queso, carne o pollo.</p>
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Harina de maíz precocida</li>
+                <li>Queso rallado</li>
+                <li>Mantequilla</li>
+                <li>Agua tibia</li>
+                <li>Sal</li>
+            </ul>
+            <button onclick="toggleSteps('arepas')">Ver pasos de preparación</button>
+            <ol id="arepas" class="steps">
+                <li>Mezclar harina, agua y sal hasta formar masa.</li>
+                <li>Hacer bolitas y aplanarlas.</li>
+                <li>Cocinar en plancha hasta dorar.</li>
+                <li>Abrir y rellenar con queso o carne.</li>
+            </ol>
+        </div>
+
+        <!-- Receta 4 -->
+        <div class="card">
+            <h2>Sancocho de Gallina</h2>
+            <img src="https://cdn.colombia.com/gastronomia/2011/07/28/sancocho-de-gallina-1594.gif" alt="Sancocho de Gallina">
+            <p class="descripcion">El Sancocho es una sopa típica colombiana, ideal para reuniones familiares. Se prepara con gallina criolla, tubérculos y mazorca.</p>
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Gallina criolla</li>
+                <li>Plátano verde</li>
+                <li>Yuca</li>
+                <li>Mazorca</li>
+                <li>Papa</li>
+                <li>Cilantro</li>
+            </ul>
+            <button onclick="toggleSteps('sancocho')">Ver pasos de preparación</button>
+            <ol id="sancocho" class="steps">
+                <li>Cocinar la gallina en agua con sal y cebolla.</li>
+                <li>Añadir plátano, yuca y papa.</li>
+                <li>Agregar mazorca y dejar hervir.</li>
+                <li>Servir con cilantro fresco.</li>
+            </ol>
+        </div>
+
+        <!-- Receta 5 -->
+        <div class="card">
+            <h2>Empanadas Colombianas</h2>
+            <img src="https://comedera.com/wp-content/uploads/sites/9/2021/12/empanadas-colombianas1.jpg" alt="Empanadas Colombianas">
+            <p class="descripcion">Las empanadas son uno de los pasabocas más populares en todo el país, rellenas de papa, carne o pollo, y fritas hasta quedar crocantes.</p>
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>Harina de maíz</li>
+                <li>Papa cocida</li>
+                <li>Carne molida</li>
+                <li>Cebolla, tomate y ajo</li>
+                <li>Aceite para freír</li>
+            </ul>
+            <button onclick="toggleSteps('empanadas')">Ver pasos de preparación</button>
+            <ol id="empanadas" class="steps">
+                <li>Preparar la masa con harina y agua.</li>
+                <li>Hacer un guiso con carne y papa.</li>
+                <li>Rellenar la masa y formar empanadas.</li>
+                <li>Freír hasta dorar.</li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>🍲 Recetas típicas de Colombia - Hecho con amor ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
